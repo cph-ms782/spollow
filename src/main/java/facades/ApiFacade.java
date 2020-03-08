@@ -102,7 +102,7 @@ public class ApiFacade {
 
         System.out.println("------------> getAllTeams");
         List<String> URLS = new ArrayList();
-        URLS.add("http://api.football-data.org/v2/competitions/PL/teams?season=2019");
+        URLS.add("http://api.football-data.org/v2/competitions/BL1/teams?season=2019");
         System.out.println("isActivatedOnce" + isActivatedOnce);
         if (isActivatedOnce) {
             return teamList;
@@ -236,7 +236,7 @@ public class ApiFacade {
 
         System.out.println("------------> getStandings");
         List<String> URLS = new ArrayList();
-        URLS.add("http://api.football-data.org/v2/competitions/PL/standings");
+        URLS.add("http://api.football-data.org/v2/competitions/BL1/standings");
 
         return getSeasonStandings(URLS);
     }
